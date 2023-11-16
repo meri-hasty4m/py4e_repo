@@ -1,0 +1,6 @@
+gross_pay_username = input('What is your name?: ')
+hourly_pay = input('Okay ' + gross_pay_username + ' What is your hourly pay?:')
+hourly_rate = input('And how many hours do you usually work?:')
+gross_pay = float(hourly_rate) * float(hourly_pay)
+formatted_pay = "{:.2f}".format(gross_pay)
+print('Pay:', formatted_pay)
