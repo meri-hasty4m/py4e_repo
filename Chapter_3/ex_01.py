@@ -5,24 +5,18 @@ Author: Meri
 Date: Nov. 14, 2023
 """
 
-gross_pay_username = input('What is your name?: ')
-hourly_pay = input('Okay ' + gross_pay_username + ' What is your hourly pay?:')
-hourly_rate = input('And how many hours do you usually work?:')
+hourly_pay = input(' What is your hourly pay?:')
+hours_worked = input('And how many hours do you usually work?:')
 hourly_pay = float(hourly_pay)
-hourly_rate = float(hourly_rate)
-standard_pay = hourly_rate * hourly_pay
+hours_worked = float(hours_worked)
+standard_pay = hours_worked * hourly_pay
 
-if hourly_rate < 40:
+if hours_worked <= 40:
     print('Regular')
     print(standard_pay)
-
 else :
     print ('Overtime')
-    overtime_hours = (hourly_rate - 40) * 1.5
-    overtime_pay = standard_pay + overtime_hours
-    print(overtime_pay)
-
-
-##gross_pay = float(hourly_rate) * float(hourly_pay)
-##formatted_pay = "{:.2f}".format(gross_pay)
-##print('Pay:', formatted_pay)
+    overtime_hours = hours_worked - 40
+    overtime_rate = (hourly_pay * 1.5)
+    total_with_overtime = (overtime_hours * overtime_rate) + (hourly_pay * 40)
+    print(total_with_overtime)
