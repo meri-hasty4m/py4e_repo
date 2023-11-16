@@ -3,6 +3,7 @@ Redo the pay exersise ex_03.py from Chapter 1, but with overtime calculated at 1
 
 Author: Meri
 Date: Nov. 14, 2023
+Modified: Nov. 16, 2023 
 """
 
 hourly_pay = input(' What is your hourly pay?:')
