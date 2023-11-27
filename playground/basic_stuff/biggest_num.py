@@ -3,7 +3,8 @@ Getting biggest number in an set of numbers.
 
 Author: Meri
 Date: Nov. 20, 2023
-Modified: N/A
+Modified: Nov. 27, 2023
+    - Added Smallest Num
 """
 
 import random
@@ -19,12 +20,26 @@ import math
 
 #print_twice(3 * 2, 4)
 
-biggest_num = -1
-def largest_so_far():
-    global biggest_num
-    for num in [ 3, 4, 93, 94, 22] :
-        if num > biggest_num :
-            biggest_num = num
-    print(biggest_num)
+ints = [ 3, 4, 93, 94, 22]
 
-largest_so_far()
+biggest_num = None
+def largest_so_far(set):
+    global biggest_num
+    for num in ints :
+        if biggest_num is None :
+            biggest_num = num
+        elif num > biggest_num :
+            biggest_num = num
+    print('Biggest: ', biggest_num)
+
+def smallest_so_far(set):
+    smallest_num = None
+    for num in ints :
+        if smallest_num is None :
+            smallest_num = num
+        elif num < smallest_num :
+            smallest_num = num
+    print('Smallest ', smallest_num)
+
+largest_so_far(ints)
+smallest_so_far(ints)
