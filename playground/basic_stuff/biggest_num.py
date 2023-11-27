@@ -27,3 +27,7 @@ def smallest_so_far(ints):
 
 largest_so_far(numbers)
 smallest_so_far(numbers)
+print(sum(numbers))
+print(len(numbers))
+print(min(numbers))
+print(max(numbers))
