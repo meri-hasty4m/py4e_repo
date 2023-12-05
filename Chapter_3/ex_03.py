@@ -11,7 +11,7 @@ Score   Grade
 
 Author: Meri
 Date: Nov. 16, 2023
-Modified:
+Modified: N/A
 """
 
 name = input("What is your name?")
