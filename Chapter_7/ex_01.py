@@ -8,7 +8,8 @@ Exercise 1: Write a program to read through a file and print
 
  """
 
-filename = ("ex_01.py")
+
+filename = ("mbox_short.txt")
 fhand = open(filename)
 for line in fhand :
     print(line.upper().strip())
