@@ -10,13 +10,8 @@ When the program completes, sort and print the resulting words in alphabetical o
 
 Author: Meri
 Date: Dec. 6, 2023
-Modified: N/A
-'''
+Modified: Dec. 9, 2023
 
-fhand = open('romeo.txt')
-
-
-new_list = list()
 
 for lines in fhand :
     split_list = lines.split()
@@ -25,3 +20,39 @@ for lines in fhand :
             new_list.append(word.lower())
 final_list = sorted(new_list)
 print(final_list)
+
+'''
+
+fhand = open('romeo.txt')
+
+
+new_list = []
+
+# Split list to get each word and lower each word
+for lines in fhand :
+    split_list = lines.split()
+    for word in split_list :
+        new_list.append(word.lower())
+
+#Sort the list
+new_list.sort()
+
+final_list = []
+
+#Remove duplicates
+for item in new_list :
+    if item not in final_list :
+        final_list.append(item)
+
+print(final_list)
+
+
+
+
+
+
+
+
+# Read the lines of the file and put them in list, all lower
+# Sort the list
+# Remove the duplicates
