@@ -15,6 +15,10 @@ to find who has the most messages and print how many messages the person has.
 Author: Meri
 Date: Dec. 20, 2023
 Modified N/A
+
+Personal notes:
+The [] after the histogram isn't finding the index, rather the value at the
+specified key you pass into it
 '''
 
 try:
